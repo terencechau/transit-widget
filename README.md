@@ -7,7 +7,7 @@ To get started, install Scriptable on your iPhone, which will allow you to run J
 2. Go [here](https://console.cloud.google.com/marketplace/product/google/directions-backend.googleapis.com?q=search&referrer=search&project=transit-widget) and enable the Directions API (make sure to go in and disable all other APIs/restrict it to the Directions API only). You'll be prompted to turn on billing and put in your credit card information (more on this below).
 3. You'll be shown your API key (the instructions on the original repository add some more steps, but this is as far as I had to go).
 
-Once you're set, edit the JavaScript code in the repo to match your departure station of choice, and enjoy public transport!
+Once you're set, edit the JavaScript code in the repo to match your departure station of choice, and enjoy some public transportation!
 
 # Billing
 
