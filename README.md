@@ -13,7 +13,7 @@ Once you're set, edit the JavaScript code in the repo to match your departure st
 
 (All I'm saying here can change and I am not responsible for any charges incurred). 
 
-Google will give you a $200 monthly credit for Maps API calls. As of my last commit, pricing for [1000 basic routes queries cost $5](https://mapsplatform.google.com/pricing/). Given that the widget is set to update every 10 minutes, that's roughly 8,640 directions requests per month, assuming you're tracking 2 routes, about $43 a month. As such, you're not really expected to go over the freee $200 monthly allowance. Definitely toggle the option to be warned if you're going over the allowance, and don't share your API key!
+Google will give you a $200 monthly credit for Maps API calls. As of my last commit, pricing for [1000 basic routes queries cost $5](https://mapsplatform.google.com/pricing/). Given that the widget is set to update every 10 minutes, that's roughly 8,640 directions requests per month, assuming you're tracking 2 routes, about $43 a month. As such, you're not really expected to go over the free $200 monthly allowance. Definitely toggle the option to be warned if you're going over the allowance, and don't share your API key!
 
 # Next Steps
 
