@@ -208,9 +208,21 @@ const lastUpdatedAtText = widget.addText(lastUpdatedAt);
 lastUpdatedAtText.textColor = colors.updated;
 lastUpdatedAtText.font = Font.lightSystemFont(8);
 
-// Every 10 minutes
-const now = Date.now();
-widget.refreshAfterDate = new Date(now + 1000 * 60 * 10);
+// Refresh the widget every 10 minutes, between 6am and 10pm
+// Get the current date and time
+const now = new Date();
+
+// Get the current hour in local time
+const currentHour = now.getHours();
+
+// Check if the current hour is between 22 (10pm) and 5 (5am)
+if (currentHour >= 22 || currentHour < 6) {
+    // If it's between 10pm and 6am, set the refresh time to 6am
+    now.setHours(6, 0, 0, 0); // Set to 6:00:00.000 AM
+} else {
+    // If it's not between 10pm and 6am, set the refresh time to 10 minutes from now
+    now.setTime(now.getTime() + 1000 * 60 * 10);
+}
 
 Script.setWidget(widget);
 Script.complete();
